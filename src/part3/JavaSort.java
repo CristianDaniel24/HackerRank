@@ -23,6 +23,7 @@ public class JavaSort {
             }
             testCases--;
         }
+        //TODO: Estudiar sobre el comparator lambdo
         // Ordenar la lista utilizando un Comparator con lambda
         studentList.sort((o1, o2) -> {
             if (o1.getCgpa() != o2.getCgpa()) {

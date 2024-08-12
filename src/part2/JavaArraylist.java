@@ -38,6 +38,7 @@ public class JavaArraylist {
         }
         for (String result : results) {
             System.out.println(result);
+
         }
 /*
         scanner.nextLine();

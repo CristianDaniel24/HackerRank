@@ -12,12 +12,11 @@ public class Staircase {
     }
 
     public static void staircase(int n) {
+        //Se recorre con el array la cantidad de caracteres requeridos
         // Write your code here
         for (int i = 1; i < n; i++) {
             System.out.printf("%" + n + "s%n", "#".repeat(i));
         }
-
-
 
         /*
         for (int i = 1; i <= n; i++) {

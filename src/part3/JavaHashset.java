@@ -10,7 +10,7 @@ public class JavaHashset {
         int t = s.nextInt();
         String[] pair_left = new String[t];
         String[] pair_right = new String[t];
-
+        //Se itera y se recibe los parametros de entrada en el Array de String
         for (int i = 0; i < t; i++) {
             pair_left[i] = s.next();
             pair_right[i] = s.next();

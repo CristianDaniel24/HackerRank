@@ -13,7 +13,6 @@ public class Student {
     }
 
     public Student() {
-
     }
 
     public int getId() {
