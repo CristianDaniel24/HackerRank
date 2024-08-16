@@ -15,8 +15,8 @@ class Result1 {
     public static int simpleArraySum(List<Integer> ar) {
         // Write your code here
         int suma = 0;
-        for (Integer number : ar) {
-            suma += number;
+        for (Integer result : ar) {
+            suma += result;
         }
         return suma;
     }

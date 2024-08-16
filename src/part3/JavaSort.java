@@ -23,15 +23,16 @@ public class JavaSort {
             }
             testCases--;
         }
+
         //TODO: Estudiar sobre el comparator lambdo
         // Ordenar la lista utilizando un Comparator con lambda
-        studentList.sort((o1, o2) -> {
-            if (o1.getCgpa() != o2.getCgpa()) {
-                return Double.compare(o2.getCgpa(), o1.getCgpa());
-            } else if (!o1.getFname().equals(o2.getFname())) {
-                return o1.getFname().compareTo(o2.getFname());
+        studentList.sort((student1, student2) -> {
+            if (student1.getCgpa() != student2.getCgpa()) {
+                return Double.compare(student2.getCgpa(), student1.getCgpa());
+            } else if (!student1.getFname().equals(student2.getFname())) {
+                return student1.getFname().compareTo(student2.getFname());
             } else {
-                return Integer.compare(o1.getId(), o2.getId());
+                return Integer.compare(student1.getId(), student2.getId());
             }
         });
 

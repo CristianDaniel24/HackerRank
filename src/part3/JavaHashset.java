@@ -16,7 +16,7 @@ public class JavaHashset {
             pair_right[i] = s.next();
         }
 
-//Write your code here
+        //Write your code here
         HashSet<String> pares = new HashSet<>();
 
         for (int i = 0; i < t; i++) {

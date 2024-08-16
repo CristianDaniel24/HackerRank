@@ -1,7 +1,6 @@
 package part2;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class JavaArraylist {
@@ -10,10 +9,9 @@ public class JavaArraylist {
         Scanner scanner = new Scanner(System.in);
 
         int size = scanner.nextInt();
-
+    
         ArrayList<String[]> numbers = new ArrayList<>();
 
-        //ArrayList<String[]> quiues = new ArrayList<>();
         scanner.nextLine();
         for (int i = 0; i < size; i++) {
             String number = scanner.nextLine();
@@ -21,24 +19,19 @@ public class JavaArraylist {
         }
 
         int size2 = scanner.nextInt();
-        List<String> results = new ArrayList<>();
+        scanner.nextLine();
 
         for (int i = 0; i < size2; i++) {
-            int x = scanner.nextInt();
-            x -= 1;
-            int y = scanner.nextInt();
-            y -= 1;
+            String queries = scanner.nextLine();
+            String[] index = queries.split(" ");
+            int key = Integer.parseInt(index[0]) - 1;
+            int values = Integer.parseInt(index[1]);
 
-
-            if (x < numbers.size() && y < numbers.get(x).length) {
-                results.add(numbers.get(x)[y]);
+            if (key < numbers.size() && values < numbers.get(key).length) {
+                System.out.println(numbers.get(key)[values]);
             } else {
-                results.add("ERROR!");
+                System.out.println("ERROR!");
             }
-        }
-        for (String result : results) {
-            System.out.println(result);
-
         }
 /*
         scanner.nextLine();

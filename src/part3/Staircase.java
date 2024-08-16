@@ -15,7 +15,7 @@ public class Staircase {
         //Se recorre con el array la cantidad de caracteres requeridos
         // Write your code here
         for (int i = 1; i < n; i++) {
-            System.out.printf("%" + n + "s%n", "#".repeat(i));
+            System.out.printf("%" + n + "%s%n", "#".repeat(i));
         }
 
         /*

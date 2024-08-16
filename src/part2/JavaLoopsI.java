@@ -10,6 +10,7 @@ public class JavaLoopsI {
             //System.out.println(N + " x " + i + " = " + (N * i));
             System.out.printf("%d x %d = %d%n", N, i, (N * i));
         }
+        System.out.println();
         scanner.close();
     }
 }

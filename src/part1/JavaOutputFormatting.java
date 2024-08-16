@@ -12,8 +12,6 @@ public class JavaOutputFormatting {
             //Complete this line
             // Usar printf para formatear
             System.out.printf("%-15s%03d%n", s1, x);
-            String formato = String.format("%-15s", s1);
-            System.out.println(formato);
         }
         System.out.println("================================");
 
