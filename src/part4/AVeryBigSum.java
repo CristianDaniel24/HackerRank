@@ -1,5 +1,6 @@
 package part4;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class AVeryBigSum {
@@ -9,6 +10,7 @@ public class AVeryBigSum {
         int size = scanner.nextInt();
 
         Long[] numbers = new Long[size];
+
         scanner.nextLine();
         String number = scanner.nextLine();
         String[] numberLong = number.split(" ");
@@ -23,4 +25,14 @@ public class AVeryBigSum {
         }
         System.out.println(sum);
     }
+
+    public static long aVeryBigSum(List<Long> ar) {
+
+        long sum = 0;
+        for (Long numberResult : ar) {
+            sum += numberResult;
+        }
+        return sum;
+    }
+
 }
