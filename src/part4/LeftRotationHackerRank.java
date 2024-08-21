@@ -2,6 +2,7 @@ package part4;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -65,7 +66,24 @@ class Result {
         for (int i = 0; i < d; i++) {
             rotated.add(arr.get(i));
         }
-        
+
         return rotated;
     }
+
+    public static List<Integer> rotateLeftV2(int d, List<Integer> arr) {
+
+        for (int i = 0; i < d; i++) {
+            Integer deleted = arr.removeFirst();
+            arr.addLast(deleted);
+        }
+        return arr;
+    }
+
+    public static List<Integer> rotateLeftV3(int d, List<Integer> arr) {
+
+        Collections.rotate(arr, d * -1);
+
+        return arr;
+    }
+
 }
